@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #101820;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainContainer {
+  max-width: 600px;
+  border: 2px black solid;
+  border-radius: 1px;
+  margin: 30px auto;
+  background-color: #F2AA4C;
+  display: grid;
+  grid-template-columns: repeat(3, 10fr);
+  grid-template-rows: repeat(3, 10fr);
+}
+
+#block {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  font-size: 200px;
+  border: 2px black solid;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  text-align: center;
+  
+}
+
+#block p {
+  position: relative;
+  bottom: 15px;
+  color: #101820;
+}
+
+#block:active {
+  box-shadow: 3px 5px 3px #101820;
+  top: 3px;
+}
