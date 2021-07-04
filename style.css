@@ -22,7 +22,7 @@ body {
   grid-template-rows: repeat(3, 10fr);
 }
 
-#block {
+.block {
   display: inline-block;
   height: 200px;
   width: 200px;
@@ -36,13 +36,42 @@ body {
   
 }
 
-#block p {
+.block p {
   position: relative;
   bottom: 15px;
   color: #101820;
 }
 
-#block:active {
+.block:active {
   box-shadow: 3px 5px 3px #101820;
   top: 3px;
+}
+
+.message {
+  color: #F2AA4C;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.restart-button {
+  position: fixed;
+  padding: 0 20px;
+  height: 40px;
+  font-size: 0.9em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 1px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  max-width: 150px;
+  width: 100%;
+  background-color: #f2aa4c;
+  bottom: 8%;
+  right: 8%;
+}
+
+.restart-button:active {
+  box-shadow: 2px 4px 2px #f2aa4c;
 }
